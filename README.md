@@ -6,7 +6,7 @@
 
 1. `.env.example` を `.env` にコピーして API キーを設定する
 2. `config.json` の `providers` に利用したいモデルを記載する
-3. `just start` で起動する
+3. `svs up my-llm-api` で起動する（[svs](https://github.com/310hz/svs) で管理）。単体で動かすときは下の `just` を使う
 
 | コマンド | 内容 |
 | --- | --- |
