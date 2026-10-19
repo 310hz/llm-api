@@ -34,43 +34,25 @@
           "name": "openrouter-key",
           "value": "env.OPENROUTER_API_KEY",
           "models": [
-            "openai/gpt-5.4",
-            "openai/gpt-5.5",
-            "anthropic/claude-sonnet-4.6",
-            "google/gemini-3-flash-preview",
-            "google/gemini-3.1-pro-preview",
-            "perplexity/sonar-pro",
-            "perplexity/sonar-pro-search",
-            "x-ai/grok-4.20",
-            "deepseek/deepseek-v4-flash",
-            "deepseek/deepseek-v4-pro",
-            "qwen/qwen3.6-flash",
-            "qwen/qwen3.6-max-preview",
-            "z-ai/glm-5.1",
-            "moonshotai/kimi-k2.6",
-            "minimax/minimax-m2.7",
-            "mistralai/mistral-small-2603",
-            "openrouter/free"
+            "openrouter/free",
+            "~openai/gpt-luna-latest",
+            "~openai/gpt-sol-latest",
+            "~openai/gpt-astra-latest",
+            "~anthropic/claude-haiku-latest",
+            "~anthropic/claude-sonnet-latest",
+            "~anthropic/claude-opus-latest",
+            "~google/gemini-flash-latest",
+            "~google/gemini-pro-latest",
+            "~x-ai/grok-latest",
+            "~deepseek/deepseek-flash-latest",
+            "~deepseek/deepseek-pro-latest",
+            "~moonshotai/kimi-latest",
+            "~z-ai/glm-flash-latest",
+            "~z-ai/glm-latest"
           ],
           "weight": 1.0
         }
       ]
-    },
-    "plamo": {
-      "keys": [
-        {
-          "name": "plamo-key",
-          "value": "env.PLAMO_API_KEY",
-          "models": ["plamo-2.2-prime"],
-          "weight": 1.0
-        }
-      ],
-      "network_config": {
-        "base_url": "https://api.platform.preferredai.jp"
-      },
-      "custom_provider_config": {
-        "base_provider_type": "openai"
-      }
     }
   },
   "config_store": {
