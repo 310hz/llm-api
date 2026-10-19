@@ -1,4 +1,4 @@
-# my-llm-api
+# llm-api
 
 自分用の LLM API プロキシ。[Bifrost](https://github.com/maximhq/bifrost) で各プロバイダを OpenAI 互換 API に集約する。
 
@@ -6,7 +6,7 @@
 
 1. `.env.example` を `.env` にコピーして API キーを設定する
 2. `config.json` の `providers` に利用したいモデルを記載する
-3. `svs up my-llm-api` で起動する（[svs](https://github.com/310hz/svs) で管理）。単体で動かすときは下の `just` を使う
+3. `svs up llm-api` で起動する（[svs](https://github.com/310hz/svs) で管理）。単体で動かすときは下の `just` を使う
 
 | コマンド | 内容 |
 | --- | --- |
