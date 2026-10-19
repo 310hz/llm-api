@@ -13,7 +13,7 @@
 | `just start` | 起動 |
 | `just stop` | 停止 |
 | `just restart` | 再起動 |
-| `just update` | イメージを pull して再起動 |
+| `just update` | イメージを pull |
 | `just logs` | ログ表示 |
 
 ## エンドポイント

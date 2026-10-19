@@ -2,7 +2,7 @@
 
 ## 現状
 
-- Bifrost v2.2.4 を単体で起動する構成のみ。`data/bifrost/` は `../llm-webui` から移したもの
+- Bifrost を単体で起動する構成のみ。`data/bifrost/` は `../llm-webui` から移したもの
 - プロバイダは OpenRouter、PLaMo、Sakana AI、Sarashina、OpenCode Zen。PLaMo / Sakana / Sarashina は OpenAI 互換のカスタムプロバイダ
 - `../llm-webui` の Open WebUI は `http://host.docker.internal:50012/v1` 経由でこの API を使う
 
