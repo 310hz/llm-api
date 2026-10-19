@@ -8,4 +8,3 @@
 ## 未完了
 
 - `../llm-webui` 側の Bifrost を削除し、Open WebUI の接続先を `http://host.docker.internal:50012/v1` に切り替える
-- `../llm-webui/data/bifrost`（設定 DB・ログ DB）の移行要否は未決定
