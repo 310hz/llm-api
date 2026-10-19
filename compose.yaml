@@ -1,0 +1,16 @@
+services:
+
+  bifrost:
+    # config.json のスキーマはバージョン間で変わるため、動作確認済みのタグに固定する
+    image: maximhq/bifrost:v2.2.4
+    container_name: bifrost
+    ports:
+      # 管理画面の認証を無効にしているため、LAN には公開しない
+      - "127.0.0.1:50012:8080"
+    volumes:
+      - ./data/bifrost:/app/db
+      - ./config.json:/app/data/config.json
+    env_file:
+      - .env
+    restart: always
+    mem_limit: 128m
