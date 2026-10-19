@@ -22,7 +22,10 @@
         "is_active": true,
         "provider_configs": [
           { "provider": "openrouter", "allowed_models": ["*"], "key_ids": ["*"] },
-          { "provider": "plamo", "allowed_models": ["*"], "key_ids": ["*"] }
+          { "provider": "plamo", "allowed_models": ["*"], "key_ids": ["*"] },
+          { "provider": "sakana", "allowed_models": ["*"], "key_ids": ["*"] },
+          { "provider": "sarashina", "allowed_models": ["*"], "key_ids": ["*"] },
+          { "provider": "opencode-zen", "allowed_models": ["*"], "key_ids": ["*"] }
         ]
       }
     ]
@@ -50,6 +53,64 @@
             "~z-ai/glm-flash-latest",
             "~z-ai/glm-latest"
           ],
+          "weight": 1.0
+        }
+      ]
+    },
+    "plamo": {
+      "keys": [
+        {
+          "name": "plamo-key",
+          "value": "env.PLAMO_API_KEY",
+          "models": ["plamo-3.0-prime"],
+          "weight": 1.0
+        }
+      ],
+      "network_config": {
+        "base_url": "https://api.platform.preferredai.jp"
+      },
+      "custom_provider_config": {
+        "base_provider_type": "openai"
+      }
+    },
+    "sakana": {
+      "keys": [
+        {
+          "name": "sakana-key",
+          "value": "env.SAKANA_API_KEY",
+          "models": ["fugu", "fugu-max", "fugu-ultra", "fugu-cyber", "sakana-namazu"],
+          "weight": 1.0
+        }
+      ],
+      "network_config": {
+        "base_url": "https://api.sakana.ai"
+      },
+      "custom_provider_config": {
+        "base_provider_type": "openai"
+      }
+    },
+    "sarashina": {
+      "keys": [
+        {
+          "name": "sarashina-key",
+          "value": "env.SARASHINA_API_KEY",
+          "models": ["sarashina3-mini", "sarashina3-nano"],
+          "weight": 1.0
+        }
+      ],
+      "network_config": {
+        "base_url": "https://api.sarashina.ai"
+      },
+      "custom_provider_config": {
+        "base_provider_type": "openai"
+      }
+    },
+    "opencode-zen": {
+      "keys": [
+        {
+          "name": "opencode-zen-key",
+          "value": "env.OPENCODE_API_KEY",
+          "models": ["*"],
           "weight": 1.0
         }
       ]
