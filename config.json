@@ -19,7 +19,11 @@
         "name": "Main API Key",
         "value": "env.BIFROST_VK_MAIN",
         "description": "Main API key",
-        "is_active": true
+        "is_active": true,
+        "provider_configs": [
+          { "provider": "openrouter", "allowed_models": ["*"], "key_ids": ["*"] },
+          { "provider": "plamo", "allowed_models": ["*"], "key_ids": ["*"] }
+        ]
       }
     ]
   },
